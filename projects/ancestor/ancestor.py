@@ -21,11 +21,11 @@ def earliest_ancestor(ancestors, starting_node):
         # connect the edges to child and parent vertices
         graph.add_edge(child, parent)
 
-    path_result = graph.bft(starting_node)
+    result = graph.bft(starting_node)
 
 # returning earliest ancestor
-    if len(path_result) == 1:
+    if len(result) == 1:
         return - 1
 
     else:
-        return path_result[-1]
+        return result[-1]
