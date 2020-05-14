@@ -29,7 +29,7 @@ player = Player(world.starting_room)
 # traversal_path = ['n', 'n']
 traversal_path = []
 
-
+revdirection = {"n":"s","s":"n","e":"w","w":"e"}
 
 # TRAVERSAL TEST
 visited_rooms = set()
