@@ -62,7 +62,7 @@ while len(alreadyVisited) < len(room_graph):
 
         player.travel(dir)
 
-    ## in case there is no direction to go towards
+    # in case there is no direction to go towards
 
     else:
         if rev[-1]:
