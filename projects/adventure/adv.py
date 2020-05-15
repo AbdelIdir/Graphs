@@ -42,8 +42,10 @@ while len(alreadyVisited) < len(room_graph):
     local = player.current_room.id
     localexits = player.current_room.get_exits()
     route.append({local: dir})
+## check if location has already been visited
+    if local not in visited
     
-    
+
 
 # TRAVERSAL TEST
 visited_rooms = set()
