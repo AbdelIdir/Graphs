@@ -33,7 +33,17 @@ revdirection = {"n": "s", "s": "n", "e": "w", "w": "e"}
 
 rev = [None]
 
-alreadyVisited= dict()
+alreadyVisited = dict()
+route = []
+
+dir = ""
+
+while len(alreadyVisited) < len(room_graph):
+    local = player.current_room.id
+    localexits = player.current_room.get_exits()
+    route.append({local: dir})
+    
+    
 
 # TRAVERSAL TEST
 visited_rooms = set()
