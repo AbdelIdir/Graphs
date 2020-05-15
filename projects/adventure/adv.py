@@ -43,7 +43,13 @@ while len(alreadyVisited) < len(room_graph):
     localexits = player.current_room.get_exits()
     route.append({local: dir})
 ## check if location has already been visited
-    if local not in visited
+    if local not in alreadyVisited:
+        if rev[-1]:
+            #take out the last used direction so that we dont go over again
+            localexits.remove(rev[-1])
+        alreadyVisited[local] = localexits
+        
+    ## check if we can go towards a direction
     
 
 
